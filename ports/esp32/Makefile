@@ -345,6 +345,7 @@ SRC_C = \
 	esp32_rmt.c \
 	esp32_ulp.c \
 	modesp32.c \
+	esp32_mcpwm.c \
 	espneopixel.c \
 	machine_hw_spi.c \
 	machine_wdt.c \
