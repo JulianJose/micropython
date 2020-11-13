@@ -194,6 +194,26 @@ Use the ``machine.PWM`` class::
 
     pwm2 = PWM(Pin(2), freq=20000, duty=512) # create and configure in one go
 
+
+MCPWM (motor control pulse width modulation)
+--------------------------------------------
+
+MCPWM can be enabled on all output-enabled pins. The API differs slightly from `machine.PWM` to allow explicit timer selection.
+Currently, this implementation only covers basic functionality.
+
+This part was copied from bskp:dev-esp32-mcpwm 
+
+For more details, see Espressif's `MCPWM
+<https://docs.espressif.com/projects/esp-idf/en/latest/api-reference/peripherals/mcpwm.html>`_ documentation.
+
+
+Use the `esp32.MCPWM` class::
+
+    from machine import Pin
+    from esp32 import MCPWM
+
+    pwm0 = PWM(0)           # Create MCPWM object with timer ID (0..5)
+
 ADC (analog to digital conversion)
 ----------------------------------
 
