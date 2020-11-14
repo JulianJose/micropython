@@ -253,7 +253,7 @@ endif
 # these flags are common to C and C++ compilation
 CFLAGS_COMMON = -Os -ffunction-sections -fdata-sections -fstrict-volatile-bitfields \
 	-mlongcalls -nostdlib \
-	-Wall -Werror -Wno-error=unused-function -Wno-error=unused-but-set-variable \
+	-Wall -Wno-error=unused-function -Wno-error=unused-but-set-variable \
 	-Wno-error=unused-variable -Wno-error=deprecated-declarations \
 	-DESP_PLATFORM
 
